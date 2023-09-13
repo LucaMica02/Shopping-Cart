@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html">
+                <h1>Online Store</h1>
+            </a>
+            
+            <a href="cart.html">
+                <div class="cart">
+                    <i class="bi bi-cart4"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+            </a>
+        </div>   
+    
+        <div id="label" class="total-amount"></div>
+    
+        <form id="myForm" class="payment-form">
+            <label for="cardholder's-name">Cardholder's Name</label>
+            <input type="text" id="cardholder's-name" form="myForm" placeholder="Digit Your Name" required>
+    
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" form="myForm" maxlength="16" placeholder="**** **** **** ****" required>
+            
+            <label for="expiry">Expiry</label>
+            <input type="text" id="expiry" form="myForm" maxlength="5" placeholder="MM/YY" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" form="myForm" maxlength="3" placeholder="CVV" required>
+        
+            <button id="pay" class="pay" type="submit">Pay</button>
+        </form>
+    </div>
+    
+    <footer> <div class="author">By LucaMica02</div> </footer>
+    
+</body>
+<script src="src/data.js"></script>
+<script src="src/form.js"></script>
+</html>

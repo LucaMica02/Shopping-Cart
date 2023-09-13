@@ -1,0 +1,229 @@
+/* General Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    min-height: 90vh;
+}
+
+i{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8F8389;
+    color: white;
+    padding: 25px 60px;
+}
+
+.cart{
+    position: relative;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.cartAmount{
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%; 
+    width: 20px;
+    height: 20px; 
+    text-align: center;
+    line-height: 20px; 
+}
+
+/* Style of Index */
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,223px);
+    gap: 30px;
+    justify-content: center; 
+}
+
+@media (max-width: 1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+    }   
+}
+
+@media (max-width: 500px){
+    .shop{
+        grid-template-columns: repeat(1,223px);
+    }   
+}
+
+.item{
+    border: 2px solid black;
+    border-radius: 4px;   
+}
+
+.item img{
+    width: 100%; 
+    border-radius: 2px 2px 0 0;   
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-dash-circle{
+    color:red;
+}
+
+.bi-plus-circle{
+    color:green;
+}
+
+/* Style of Cart */
+
+.text-center,
+.total-amount{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeButton,
+.checkout,
+.clear,
+.pay{
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+}
+
+.clear{
+    background-color: red;
+}
+
+.bi-x-octagon{
+    color: red;
+}
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.cartItem{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item-price{
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+/* Form Style*/
+
+.payment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1,200px);
+    gap: 10px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+.total-amount{
+    font-size: 24px;
+    color: green;
+}
+
+/* Style of Footer */
+footer{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: #8F8389;
+}
+
+.author{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 15px;
+}
