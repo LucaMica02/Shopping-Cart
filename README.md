@@ -1,4 +1,9 @@
 # Shopping Cart - Your Online Shopping Solution 🛒
+
+![HTML Version](https://img.shields.io/badge/HTML-5-orange)
+![CSS Version](https://img.shields.io/badge/CSS-3-blue)
+![JavaScript Version](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
+
 Welcome to Shopping Cart! This is a simple yet powerful online shopping cart that allows users to add and remove products with ease. The cart keeps track of selected items and takes the user to checkout when they're ready to complete their purchase. Whether you're building a small online store or a demo project, this shopping cart is a great starting point!
 
 ## Features ✨
